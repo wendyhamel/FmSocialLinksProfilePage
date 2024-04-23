@@ -8,27 +8,50 @@
   
   <title>Frontend Mentor | Social links profile</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind play cdn ( for development and play purposes ) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="src/tailwind.config.js"></script>
 </head>
-<body>
+<body class="antialiased bg-off-black">
+<main class="text-white min-h-screen flex flex-col justify-center min-h-screen p-6">
+  <section class="bg-dark-gray rounded-xl p-6 text-center mt-2 sm:max-w-sm sm:mx-auto sm:min-w-96 sm:p-10">
+    <img class="mx-auto rounded-full w-[5.5rem] h-[5.5rem]" src="./assets/images/avatar-jessica.jpeg" alt="Jessica Randall">
+    <h1 class="font-bold text-2xl mt-7 sm:font-bold">Jessica Randall</h1>
+    <p class="text-green font-semibold text-sm mt-1.5">London, United Kingdom</p>
+    <p class="text-sm mt-7">"Front-end developer and avid reader."</p>
+    <ul class="grid gap-4 mt-6">
+      <li>
+        <a class="block rounded-lg bg-gray px-6 py-4 leading-none text-center text-sm leading-none font-bold hover:bg-green hover:text-gray focus:outline-none focus:ring-2 focus:ring-green focus:ring-offset-2 transition ease-out duration-150" href="#">GitHub</a>
+      </li>
+      <li>
+        <a class="block rounded-lg bg-gray px-6 py-4 leading-none text-center text-sm leading-none font-bold hover:bg-green hover:text-gray focus:outline-none focus:ring-2 focus:ring-green focus:ring-offset-2 transition ease-out duration-150" href="#">Frontend Mentor</a>
+      </li>
+      <li>
+        <a class="block rounded-lg bg-gray px-6 py-4 leading-none text-center text-sm leading-none font-bold hover:bg-green hover:text-gray focus:outline-none focus:ring-2 focus:ring-green focus:ring-offset-2 transition ease-out duration-150" href="#">LinkedIn</a>
+      </li>
+      <li>
+        <a class="block rounded-lg bg-gray px-6 py-4 leading-none text-center text-sm leading-none font-bold hover:bg-green hover:text-gray focus:outline-none focus:ring-2 focus:ring-green focus:ring-offset-2 transition ease-out duration-150" href="#">Twitter</a>
+      </li>
+      <li>
+        <a class="block rounded-lg bg-gray px-6 py-4 leading-none text-center text-sm leading-none font-bold hover:bg-green hover:text-gray focus:outline-none focus:ring-2 focus:ring-green focus:ring-offset-2 transition ease-out duration-150" href="#">Instagram</a>
+      </li>
+    </ul>
+  </section>
+</main>
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
+<footer>
+  <section class="fixed bottom-0 inset-x-0 text-center text-xs text-white py-2 bg-black opacity-0 translate-y-2 hover:opacity-100 hover:translate-y-0 transform transition ease-out duration-300 sm:py-3">
+    <div class="px-2 text-center">
+      Challenge by <a class="hover:text-green hover:underline ease-in-out duration-150" href="https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ" target="_blank">Frontend Mentor</a>.
+      Coded by <a class="hover:text-green hover:underline ease-in-out duration-150" href="https://www.frontendmentor.io/profile/wendyhamel" target="_blank">Wendy Hamel</a>.
+    </div>
+  </section>
+</footer>
 
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
